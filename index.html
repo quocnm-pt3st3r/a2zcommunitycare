@@ -14,14 +14,5 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      (function(){
-        var r = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (r && r !== location.href) {
-          history.replaceState(null, null, r);
-        }
-      })();
-    </script>
   </body>
 </html>
