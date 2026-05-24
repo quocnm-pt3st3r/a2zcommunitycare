@@ -4,12 +4,14 @@
   <meta charset="utf-8">
   <title>A2Z Community Care</title>
   <script>
-    // spa-github-pages redirect for user pages (pathSegmentsToKeep = 0)
+    // spa-github-pages redirect for project pages (pathSegmentsToKeep = 1)
+    // Redirects /a2zcommunitycare/about -> /a2zcommunitycare/?/about
     var l = window.location;
+    var segments = l.pathname.split('/');
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      '/?/' +
-      l.pathname.slice(1).replace(/&/g, '~and~') +
+      '/' + segments[1] + '/?/' +
+      segments.slice(2).join('/').replace(/&/g, '~and~') +
       (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
       l.hash
     );
