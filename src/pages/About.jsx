@@ -18,7 +18,7 @@ const values = [
 export default function About() {
   return (
     <div className="page about-page">
-      <div className="page-hero" style={{ backgroundImage: 'url(/images/about_us.d75b17680506be022dd9.png)' }}>
+      <div className="page-hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/about_us.d75b17680506be022dd9.png)` }}>
         <div className="page-hero-overlay">
           <Title level={1}>ABOUT US</Title>
         </div>
@@ -42,7 +42,7 @@ export default function About() {
             </Paragraph>
           </Col>
           <Col xs={24} md={10}>
-            <img src="/images/pet.c9bde7a3b18c0cda2c74.png" alt="About Us" className="img-rounded" />
+            <img src={`${import.meta.env.BASE_URL}images/pet.c9bde7a3b18c0cda2c74.png`} alt="About Us" className="img-rounded" />
           </Col>
         </Row>
       </div>

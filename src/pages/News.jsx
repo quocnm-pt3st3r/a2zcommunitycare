@@ -10,7 +10,7 @@ const newsArticles = [
     date: '15 May 2026',
     author: 'A2Z Team',
     category: 'NDIS Update',
-    image: '/images/news.96392a1052f378025fc4.jpg',
+    image: `${import.meta.env.BASE_URL}images/news.96392a1052f378025fc4.jpg`,
     excerpt: 'We are excited to announce the expansion of our NDIS support services across Melbourne, including new community participation programs and enhanced support coordination.',
     link: '/news/1',
   },
@@ -19,7 +19,7 @@ const newsArticles = [
     date: '28 April 2026',
     author: 'A2Z Team',
     category: 'Tips & Advice',
-    image: '/images/vocher.c8befbbe1f4290d9fe31.jpg',
+    image: `${import.meta.env.BASE_URL}images/vocher.c8befbbe1f4290d9fe31.jpg`,
     excerpt: 'Learn how to maximize your NDIS funding and make informed decisions about your support services with our helpful guide.',
     link: '/news/2',
   },
@@ -28,7 +28,7 @@ const newsArticles = [
     date: '10 April 2026',
     author: 'A2Z Team',
     category: 'Success Story',
-    image: '/images/pet.c9bde7a3b18c0cda2c74.png',
+    image: `${import.meta.env.BASE_URL}images/pet.c9bde7a3b18c0cda2c74.png`,
     excerpt: 'Read about Maria\'s inspiring journey from isolation to active community participation with the support of A2Z Community Care.',
     link: '/news/3',
   },
@@ -37,7 +37,7 @@ const newsArticles = [
     date: '22 March 2026',
     author: 'A2Z Team',
     category: 'Education',
-    image: '/images/banner1.jpg',
+    image: `${import.meta.env.BASE_URL}images/banner1.jpg`,
     excerpt: 'A comprehensive guide to Supported Independent Living — what it is, who it\'s for, and how it can help you or your loved one achieve greater independence.',
     link: '/news/4',
   },
@@ -46,7 +46,7 @@ const newsArticles = [
     date: '5 March 2026',
     author: 'A2Z Team',
     category: 'Announcement',
-    image: '/images/refer.c951803bbd970a45374d.jpg',
+    image: `${import.meta.env.BASE_URL}images/refer.c951803bbd970a45374d.jpg`,
     excerpt: 'Voucher $200 dành cho các bạn trẻ từ 0-18 tuổi có thẻ Health Care Card hoặc Pensioner Concession Card và Medicare card. Liên hệ ngay!',
     link: '/news/5',
   },
@@ -55,7 +55,7 @@ const newsArticles = [
     date: '20 March 2023',
     author: 'A2Z Team',
     category: 'Event',
-    image: '/images/Moonba.23e29837d2d344a61400.png',
+    image: `${import.meta.env.BASE_URL}images/Moonba.23e29837d2d344a61400.png`,
     excerpt: 'Tham gia buổi biểu diễn thú cưng tại Melbourne. Sự kiện vui nhộn dành cho cả gia đình với nhiều hoạt động thú vị.',
     link: '/news/6',
   },
@@ -64,7 +64,7 @@ const newsArticles = [
     date: '15 March 2023',
     author: 'A2Z Team',
     category: 'Event',
-    image: '/images/MELBOURNE.f873d502bbcc333a8b8d.png',
+    image: `${import.meta.env.BASE_URL}images/MELBOURNE.f873d502bbcc333a8b8d.png`,
     excerpt: 'Join us for the Melbourne Pizza Run 2023! A fun community event for everyone. Come along and enjoy great food and company.',
     link: '/news/7',
   },
@@ -75,7 +75,7 @@ const categories = ['All', 'NDIS Update', 'Tips & Advice', 'Success Story', 'Edu
 export default function News() {
   return (
     <div className="page news-page">
-      <div className="page-hero" style={{ backgroundImage: 'url(/images/news.96392a1052f378025fc4.jpg)' }}>
+      <div className="page-hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/news.96392a1052f378025fc4.jpg)` }}>
         <div className="page-hero-overlay">
           <Title level={1}>News & Updates</Title>
         </div>

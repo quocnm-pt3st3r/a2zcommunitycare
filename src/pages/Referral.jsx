@@ -33,7 +33,7 @@ export default function Referral() {
 
   return (
     <div className="page referral-page">
-      <div className="page-hero" style={{ backgroundImage: 'url(/images/refer.c951803bbd970a45374d.jpg)' }}>
+      <div className="page-hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/refer.c951803bbd970a45374d.jpg)` }}>
         <div className="page-hero-overlay">
           <Title level={1}>MAKE A REFERRAL</Title>
         </div>

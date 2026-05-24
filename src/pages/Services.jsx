@@ -53,7 +53,7 @@ const services = [
 export default function Services() {
   return (
     <div className="page services-page">
-      <div className="page-hero" style={{ backgroundImage: 'url(/images/vocher.c8befbbe1f4290d9fe31.jpg)' }}>
+      <div className="page-hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/vocher.c8befbbe1f4290d9fe31.jpg)` }}>
         <div className="page-hero-overlay">
           <Title level={1}>SERVICES WE PROVIDE</Title>
         </div>

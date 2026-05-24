@@ -65,9 +65,9 @@ export default function Home() {
           loop
           playsInline
           className="hero-video"
-          poster="/images/banner1.jpg"
+          poster={`${import.meta.env.BASE_URL}images/banner1.jpg`}
         >
-          <source src="/images/video-banner.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}images/video-banner.mp4`} type="video/mp4" />
         </video>
         <div className="hero-video-overlay">
           <Swiper
@@ -111,7 +111,7 @@ export default function Home() {
               <Link to="/about"><Button type="primary" size="large">Learn More About Us</Button></Link>
             </Col>
             <Col xs={24} md={10}>
-              <img src="/images/about_us.d75b17680506be022dd9.png" alt="Care" className="img-rounded" />
+              <img src={`${import.meta.env.BASE_URL}images/about_us.d75b17680506be022dd9.png`} alt="Care" className="img-rounded" />
             </Col>
           </Row>
         </div>

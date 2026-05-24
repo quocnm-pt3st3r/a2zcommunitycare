@@ -21,7 +21,7 @@ export default function Contact() {
 
   return (
     <div className="page contact-page">
-      <div className="page-hero" style={{ backgroundImage: 'url(/images/contact_us.015effc567a3fe61ae30.jpg)' }}>
+      <div className="page-hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/contact_us.015effc567a3fe61ae30.jpg)` }}>
         <div className="page-hero-overlay">
           <Title level={1}>Contact Us</Title>
         </div>

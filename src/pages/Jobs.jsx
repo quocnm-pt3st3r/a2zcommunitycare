@@ -42,7 +42,7 @@ const jobs = [
 export default function Careers() {
   return (
     <div className="page careers-page">
-      <div className="page-hero" style={{ backgroundImage: 'url(/images/refer.c951803bbd970a45374d.jpg)' }}>
+      <div className="page-hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/refer.c951803bbd970a45374d.jpg)` }}>
         <div className="page-hero-overlay">
           <Title level={1}>JOBS</Title>
         </div>
@@ -63,7 +63,7 @@ export default function Careers() {
             </Paragraph>
           </Col>
           <Col xs={24} md={10}>
-            <img src="/images/pet.c9bde7a3b18c0cda2c74.png" alt="Careers" className="img-rounded" />
+            <img src={`${import.meta.env.BASE_URL}images/pet.c9bde7a3b18c0cda2c74.png`} alt="Careers" className="img-rounded" />
           </Col>
         </Row>
       </div>

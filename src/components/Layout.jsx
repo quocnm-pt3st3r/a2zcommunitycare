@@ -34,7 +34,7 @@ export default function Layout() {
       <AntHeader className="header">
         <div className="header-inner">
           <Link to="/" className="logo">
-            <img src="/images/logo.aec6e08f430e4cc6e61a.png" alt="A2Z" className="logo-img" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.aec6e08f430e4cc6e61a.png`} alt="A2Z" className="logo-img" />
             <div className="logo-text">
               <span className="logo-title">A2Z Community Care</span>
               <span className="logo-subtitle">NDIS Service Provider</span>
